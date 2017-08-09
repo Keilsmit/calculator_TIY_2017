@@ -4,6 +4,8 @@
   margin: 75px;
 }
 
+
+
 .button{
   background-color: 996600;
   text-align: center;
@@ -13,8 +15,18 @@
   color: white;
 }
 
+.button:hover{
+  /*background-color: #d0b79f;*/
+  opacity: .6;
+}
+
+.operator:hover{
+  background-color: #d0b79f;
+  opacity: .8;
+}
+
 .operator{
-  background-color: CC6600;
+  background-color: #CC6600;
   text-align: center;
   font-weight: 600;
   font-size: 40px;
@@ -26,6 +38,10 @@
   font-weight: 800;
   font-size: 38px;
   height: 20%;
+  background-color: black;
+  color: white;
+  padding-right: 30px;
+  font-size: 50px;
 }
 
 
@@ -38,12 +54,14 @@
 
 .button{
   width: 25%;
+  box-flex: 1;
 }
 
 .display{
-  width: 74%;
+  width: 73%;
 }
 
 .operator{
   width: 23%;
+  box-flex: 2;
 }

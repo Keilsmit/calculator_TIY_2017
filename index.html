@@ -14,30 +14,30 @@
 <body>
     <!-- Content goes here. -->
 
-    <div class="container">
-        <form class="calculator_form" name="calculator">
+    <div>
+        <form class="calculator_form container" name="calculator">
             <input class="button"  value="C" onclick="btnclear()" ;/>
             <input class="display" name="display" readonly placeholder="0" />
             <br/>
-            <input class="button" value="7" onclick="document.calculator.display.value += '7'" ;/>
-            <input class="button" value="8" onclick="document.calculator.display.value += '8'" ; />
-            <input class="button" value="9" onclick="document.calculator.display.value += '9'" ; />
-            <input class="operator" value="/" onclick="btndiv()" ; />
+            <input class="button" value="7" readonly onclick="document.calculator.display.value += '7'" ;/>
+            <input class="button" value="8" readonly onclick="document.calculator.display.value += '8'" ; />
+            <input class="button" value="9" readonly onclick="document.calculator.display.value += '9'" ; />
+            <input class="operator" value="/" readonly onclick="btndiv()" ; />
             <br />
-            <input class="button" value="4" onclick="document.calculator.display.value += '4'" ; />
-            <input class="button" value="5" onclick="document.calculator.display.value += '5'" />
-            <input class="button" value="6" onclick="document.calculator.display.value += '6'" />
-            <input class="operator" value="x" onclick="btnmult()" ;/>
+            <input class="button" value="4" readonly onclick="document.calculator.display.value += '4'" ; />
+            <input class="button" value="5" readonly onclick="document.calculator.display.value += '5'" />
+            <input class="button" value="6" readonly onclick="document.calculator.display.value += '6'" />
+            <input class="operator" value="x" readonly onclick="btnmult()" ;/>
             <br />
-            <input class="button" value="1" onclick="document.calculator.display.value += '1'" ; />
-            <input class="button" value="2" onclick="document.calculator.display.value += '2'" />
-            <input class="button" value="3" onclick="document.calculator.display.value += '3'" />
-            <input class="operator" value="-" onclick="btnsub()" ; />
+            <input class="button" value="1" readonly onclick="document.calculator.display.value += '1'" ; />
+            <input class="button" value="2" readonly onclick="document.calculator.display.value += '2'" />
+            <input class="button" value="3" readonly onclick="document.calculator.display.value += '3'" />
+            <input class="operator" value="-" readonly onclick="btnsub()" ; />
             <br />
-            <input class="button" value="0" onclick="document.calculator.display.value += '0'" />
-            <input class="button" value="." onclick="btndot()" ; />
-            <input class="button" value="=" onclick="document.calculator.display.value = eval(document.calculator.display.value)" ; />
-            <input class="operator" value="+" onclick="btnplus()" ; />
+            <input class="button" value="0" readonly onclick="document.calculator.display.value += '0'" />
+            <input class="button" value="." readonly onclick="btndot()" ; />
+            <input class="button" value="=" readonly onclick="document.calculator.display.value = eval(document.calculator.display.value)" ; />
+            <input class="operator" value="+" readonly onclick="btnplus()" ; />
         </form>
     </div>
 
