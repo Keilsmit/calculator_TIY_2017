@@ -16,7 +16,7 @@
 
     <div>
         <form class="calculator_form container" name="calculator">
-            <input class="button"  value="C" onclick="btnclear()" ;/>
+            <input class="button" id="clear"  value="C" onclick="btnclear()" ;/>
             <input class="display" name="display" readonly placeholder="0" />
             <br/>
             <input class="button" value="7" readonly onclick="document.calculator.display.value += '7'" ;/>
@@ -36,7 +36,7 @@
             <br />
             <input class="button" value="0" readonly onclick="document.calculator.display.value += '0'" />
             <input class="button" value="." readonly onclick="btndot()" ; />
-            <input class="button" value="=" readonly onclick="document.calculator.display.value = eval(document.calculator.display.value).toPrecision(3);" ; />
+            <input class="button" value="=" id="equal" readonly onclick="document.calculator.display.value = eval(document.calculator.display.value).toPrecision(7);" ; />
             <input class="operator" value="+" readonly onclick="btnplus()" ; />
         </form>
     </div>
