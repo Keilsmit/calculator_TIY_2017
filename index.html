@@ -36,7 +36,7 @@
             <br />
             <input class="button" value="0" readonly onclick="document.calculator.display.value += '0'" />
             <input class="button" value="." readonly onclick="btndot()" ; />
-            <input class="button" value="=" readonly onclick="document.calculator.display.value = eval(document.calculator.display.value)" ; />
+            <input class="button" value="=" readonly onclick="document.calculator.display.value = eval(document.calculator.display.value).toPrecision(3);" ; />
             <input class="operator" value="+" readonly onclick="btnplus()" ; />
         </form>
     </div>
